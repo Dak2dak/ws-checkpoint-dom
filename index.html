@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>PANIER HTML-CSS-JS</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>PRODUIT</th>
+                    <th>PRIX UNITAIRE</th>
+                    <th>QUANTITE</th>
+                    <th>SOUS-TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Première ligne de produit -->
+                <tr id="row-one">
+                    <td class="bg-gray">Prod 1 </td>
+                    <td>$<span class="unit_price">10.00</span></td>
+                    <td class="td_quantity" width="25">
+                        <button class="btn-minus" onclick="decreaseQuantity()">-</button> 
+                        <span class="quantity">2</span>
+                        <button class="btn-plus" onclick="increaseQuantity()">+</button></td>
+                    <td>$<span id="total_prod_1">20.00</span></td>
+                    <td class="del"><button id="deleteRowOne">SUPPRIMER</button></td>
+                </tr>
+
+                <!-- Deuxième ligne de produit -->
+                <tr id="row-two">
+                    <td class="bg-gray">Prod 2</td>
+                    <td>$<span class="unit_price_2">15.00</span></td>
+                    <td class="td_quantity">
+                        <button class="btn-minus_2" onclick="decrease()">-</button> 
+                        <span class="quantity_2">1</span> 
+                        <button class="btn-plus_2" onclick="increase()">+</button></td>
+                    <td>$<span id="total_prod_2">15.00</span></td>
+                    <td class="del"><button id="deleteRowTwo">SUPPRIMER</button></td>
+                </tr>
+
+                <!-- Troisième ligne dédiée au total -->
+                <tr>
+                    <td class="hide_cell"></td>
+                    <td class="hide_cell"></td>
+                    <td class="bg-gray">TOTAL</td>
+                    <td class="bg-gray"><span id="total"></span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

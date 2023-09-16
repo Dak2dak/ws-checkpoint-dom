@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+th, td {
+    width: 150px;
+    padding: 3px 0;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #ddd;
+}
+
+td {
+    text-align: center;
+    
+}
+
+.bg-gray {
+    font-weight: 600;
+    background-color: #ddd;
+}
+
+.hide_cell {
+    visibility: hidden;
+}
+
+.btn-plus, .btn-minus, .btn-minus_2, .btn-plus_2 {
+    width: 20px;
+}
+
+.del {
+    background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.deleteRowOne {
+    display: none;
+}
