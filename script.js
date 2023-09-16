@@ -1,7 +1,7 @@
 
+// ============= WORKSHOP DOM - BASIC DHOPPING CART =====================
 
-
-
+// Delete a whole row
 const Btn = document.getElementById('deleteRowOne')
 Btn.addEventListener('click', async(e) => {
     e.preventDefault()
@@ -10,22 +10,24 @@ Btn.addEventListener('click', async(e) => {
 })
 
 
-
+// Minus button
 const btnMinus = document.querySelector('.btn-minus')
 btnMinus.addEventListener('click', function decreaseQuantity(){
     if(document.querySelector('.quantity').innerText > 0) {
         document.querySelector('.quantity').innerText = parseInt(document.querySelector('.quantity').innerText) - 1
     }
 
-    sousTotal1()
+    sousTotal1() //Calculate the bubtotal on a row
 })
 
+// Defining the subtotal1 function
 function sousTotal1() {
     let unitPrice = document.querySelector('.unit_price').innerText
     let qty = document.querySelector('.quantity').innerText
     document.getElementById('total_prod_1').innerText = qty * unitPrice
 }
 
+// Plus button
 const btnPlus = document.querySelector('.btn-plus')
 btnPlus.addEventListener('click', function increaseQuantity(){
     document.querySelector('.quantity').innerText = parseInt(document.querySelector('.quantity').innerText) + 1
@@ -33,6 +35,7 @@ btnPlus.addEventListener('click', function increaseQuantity(){
     sousTotal2() //Calculate the bubtotal on a row
 })
 
+// Defining the subtotal1 function
 function sousTotal2() {
     let unitPrice = document.querySelector('.unit_price').innerText
     let qty = document.querySelector('.quantity').innerText
