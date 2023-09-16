@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Panier</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -29,7 +30,10 @@
                         <span class="quantity">2</span>
                         <button class="btn-plus" onclick="increaseQuantity()">+</button></td>
                     <td>$<span id="total_prod_1">20.00</span></td>
-                    <td class="del"><button id="deleteRowOne">SUPPRIMER</button></td>
+                    <td class="del">
+                        <button id="deleteRowOne">SUPPRIMER</button>
+                        <button class="icon-btn" onclick="likeProduct()"><i class="fa-solid fa-heart"></i></button>
+                    </td>
                 </tr>
 
                 <!-- Deuxième ligne de produit -->
@@ -41,7 +45,10 @@
                         <span class="quantity_2">1</span> 
                         <button class="btn-plus_2" onclick="increase()">+</button></td>
                     <td>$<span id="total_prod_2">15.00</span></td>
-                    <td class="del"><button id="deleteRowTwo">SUPPRIMER</button></td>
+                    <td class="del">
+                        <button id="deleteRowTwo">SUPPRIMER</button>
+                        <button class="icon-btn"><i class="fa-solid fa-heart"></i></button>
+                    </td>
                 </tr>
 
                 <!-- Troisième ligne dédiée au total -->

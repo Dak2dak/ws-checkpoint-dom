@@ -30,7 +30,7 @@ const btnPlus = document.querySelector('.btn-plus')
 btnPlus.addEventListener('click', function increaseQuantity(){
     document.querySelector('.quantity').innerText = parseInt(document.querySelector('.quantity').innerText) + 1
 
-    sousTotal2()
+    sousTotal2() //Calculate the bubtotal on a row
 })
 
 function sousTotal2() {
@@ -40,6 +40,22 @@ function sousTotal2() {
 }
 
 
+// Implementing a function to the LIKE button
+const iconBtn = document.querySelector('.icon-btn')
+iconBtn.addEventListener('click', likeProduct)
+
+function likeProduct() {
+    let heartIcon = document.querySelector('.fa-heart')
+    heartIcon.style.color = '#900D09'
+    // iconBtn.style.backgroundColor = '#900D09'
+
+}
+
+
+// Calculate the total
+const total1 = document.getElementById('total_prod_1').innerText
+const total2 = document.getElementById('total_prod_2').innerText
+document.getElementById('total').innerText = `$${parseInt(total1) + parseInt(total2)}.00`
 
 
 
@@ -49,15 +65,4 @@ function sousTotal2() {
 
 
 
-// btnMinus.addEventListener('click', decreaseQuantity)
 
-// function decreaseQuantity() {
-
-// }
-
-
-
-
-
-// const qty = document.querySelector('.quantity').innerText
-// console.log(qty)

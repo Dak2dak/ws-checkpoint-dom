@@ -45,8 +45,26 @@ td {
     width: 20px;
 }
 
+.quantity, .quantity_2 {
+    padding: 0 8px;
+}
+
 .del {
     background-color: #ddd;
+}
+
+.icon-btn {
+    border: none;
+    padding: 3px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    /* background-color: #ddd; */
+}
+
+.fa-solid {
+    font-size: 20px;
+    color: #ddd;
 }
 
 
